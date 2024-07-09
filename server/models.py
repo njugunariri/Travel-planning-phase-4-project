@@ -9,7 +9,7 @@ import re
 
 # Association table to store many-to-many relationship between categories and activities
 activity_category = db.Table(
-    'activities_meetings',
+    'activities_categories',
     metadata,
     db.Column('activity_id', db.Integer, db.ForeignKey(
         'activities.id'), primary_key=True),
